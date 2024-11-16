@@ -31,6 +31,8 @@
 &tog 3   &kp Z           &kp X           &kp C             &kp V               &kp B        &kp N    &kp M                &kp COMMA          &kp DOT         &kp FSLH            &kp BACKSLASH
                                          &kp DELETE        &mo 1               &kp SPACE    &kp RET  &mo 2                &kp BACKSPACE
             >;
+
+            label = "QWERTY";
         };
 
         NUMROW_BT {
@@ -46,6 +48,8 @@
 &kp LSHFT   &trans        &trans        &kp F13       &out OUT_TOG  &studio_unlock    &trans    &trans    &trans         &trans     &trans  &trans
                                         &kp DELETE    &trans        &kp SPACE         &kp RET   &trans    &kp BACKSPACE
             >;
+
+            label = "NUM";
         };
 
         SYM {
@@ -61,6 +65,8 @@
 &kp LSHFT  &trans    &trans  &trans            &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC       &kp RBRC  &kp PIPE  &kp TILDE
                              &kp DELETE        &trans    &kp SPACE    &kp RET    &trans     &kp BACKSPACE
             >;
+
+            label = "SYM";
         };
 
         NUMPAD {
@@ -70,6 +76,8 @@
 &trans  &trans     &trans     &trans     &trans     &trans    &kp N0        &kp N1  &kp N2  &kp N3  &kp MINUS        &kp KP_COMMA
                               &trans     &trans     &trans    &trans        &trans  &trans
             >;
+
+            label = "NUMPAD";
         };
     };
 };
