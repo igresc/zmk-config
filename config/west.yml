@@ -5,15 +5,20 @@ manifest:
       url-base: https://github.com/zmkfirmware
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
+    - name: igresc
+      url-base: https://github.com/igresc
     - name: m165437
       url-base: https://github.com/M165437
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main 
+      revision: v0.3.0
       import: app/west.yml
+    - name: zmk-nice-view-mod
+      remote: igresc
+      revision: main
     - name: nice-view-gem
       remote: m165437
-      revision: main
+      revision: v0.3.0
   self:
     path: config
