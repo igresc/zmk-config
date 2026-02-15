@@ -8,6 +8,10 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+// pin p1.01 seems to be low frequency which could cause issues with SPI, change the pin to D1/P0.06 (RGB) 
+
+&nice_view_spi { cs-gpios = <&gpio1 1 GPIO_ACTIVE_HIGH>; };
+
 #define GAME    1 
 #define QWERTY  0 
 #define NAV     2
@@ -134,7 +138,3 @@
 
     };
 };
-
-// pin p1.01 seems to be low frequency which could cause issues with SPI, change the pin to D1/P0.06 (RGB) 
-
-&nice_view_spi { cs-gpios = <&gpio1 1 GPIO_ACTIVE_HIGH>; };
